@@ -1,0 +1,31 @@
+<div id="header-div">
+  <mat-toolbar>
+    <div [style.margin-left.px]="titleMarginLeft">
+      <h1>Asset Copier</h1><!-- class="logo-style2"-->
+    </div>
+    <nav>
+      <ul> <!--valutare mat-list-... TODO -> non ha comportamento atteso-->
+        <li>HOME</li>
+        <!mat-divider [vertical]="true"><!/mat-divider> <!--non vanno perché non è una lista verticale? TODO valutare-->
+        <li>test</li>
+        <li>test test test<a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><input type="button" value="Log Out"><a href="#"></a></li> <!-- TODO example input -->
+      </ul>
+    </nav>
+  </mat-toolbar>
+</div>
+<div id="tabs-container" [style.top.px]="tabsMarginTop" #tabsContainer>
+  <div class="row">
+    <div class="col-md-6">
+      <!-- Nav tabs --><div class="card">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>

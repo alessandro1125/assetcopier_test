@@ -1,0 +1,8 @@
+mat-sidenav-container {
+  position: inherit;
+  height: 100%; /*riempie tutta la pagina TODO da vedere*/
+  background-color: white;
+  font: normal var(--fontsize)/normal var(--font_dhyana), Helvetica, sans-serif;
+  color: var(--main_text_color);
+  width: 100%;
+}

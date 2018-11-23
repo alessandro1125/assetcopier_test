@@ -1,0 +1,13 @@
+mat-sidenav {
+  position: inherit;
+  width: 20%;
+  float:left;
+  background: white !important;
+  height: 100%;
+}
+
+hr {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}

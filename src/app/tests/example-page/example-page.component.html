@@ -1,0 +1,32 @@
+<section class="example-events">
+  Main content Main content Main <br>content Main content Main content Main content Main content Main content
+
+  <mat-grid-list cols="2" rowHeight="3:1">
+    <mat-grid-tile-header>ciao</mat-grid-tile-header>
+    <mat-grid-tile><div>
+      <mat-form-field class="example-full-width"> <!-- TODO example input -->
+        <input matInput #message maxlength="256" placeholder="Message">
+        <!--<mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint> TODO hint
+        <mat-hint align="end">{{message.value.length}} / 256</mat-hint> TODO length -->
+      </mat-form-field> <!-- TODO END example input -->
+      1</div></mat-grid-tile>
+    <mat-grid-tile>
+      <form> <!-- TODO example email input validator -->
+        <mat-form-field>
+          <input matInput placeholder="Email" [formControl]="emailFormControl"
+                 [errorStateMatcher]="matcher">
+          <mat-hint>Errors appear instantly!</mat-hint>
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </form> <!-- TODO END example email input validator -->
+      2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>
+</section>
+
